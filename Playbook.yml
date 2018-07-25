@@ -1,0 +1,9 @@
+- name: Write File
+  hosts: 127.0.0.1
+  connection: local
+  become: true
+  tasks:
+    copy:
+      content: "test content"
+      dest: /home/test
+      force: n
